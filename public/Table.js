@@ -2,7 +2,7 @@ var Table = function(){
   this.statusBoolean();
 }
 
-Table.prototype.monthClicker = function(color){
+Table.prototype.monthColouriser = function(color){
   const tableCells = document.getElementsByTagName('td');
 
   for(var i=0; i < tableCells.length; i++) {
@@ -17,9 +17,9 @@ Table.prototype.statusBoolean = function(){
   var heelRadioBtn = document.getElementById('heel-radio');
 
   faceRadioBtn.addEventListener('change', function(){
-    this.monthClicker('green');
+    this.monthColouriser('green');
   }.bind(this))
   heelRadioBtn.addEventListener('change', function(){
-    this.monthClicker("red");
+    this.monthColouriser("red");
   }.bind(this))
 }

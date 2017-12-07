@@ -1,7 +1,7 @@
 var app = function(){
 
   var table = new Table();
-  table.monthClicker();
+  table.monthColouriser();
 
 
 };

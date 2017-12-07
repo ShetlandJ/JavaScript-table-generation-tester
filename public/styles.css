@@ -3,10 +3,10 @@ body {
 }
 
 table {
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 
-td {
+td, th {
   border: 1px solid black;
   height: 20px;
   width: 20px;

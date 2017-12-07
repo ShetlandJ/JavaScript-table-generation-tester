@@ -1,11 +1,29 @@
 var app = function(){
 
-  var tableCell = document.getElementsByClassName('month-cells');
-  console.log(tableCell);
-  tableCell[0].addEventListener('click', function(){
-    console.log("hello")
-    tableCell[0].style.backgroundColor = "#AA0000";
-  });
+  const tableCells = document.getElementsByTagName('td');
+
+  for(var i=0; i< tableCells.length; i++) {
+        tableCells[i].addEventListener("click", bindClick(i));
+  }
+
+  function bindClick(i) {
+    return function(){
+      console.log(i);
+      this.style.backgroundColor = "#AA0000"
+    };
+  }
+
+
+
+
+
+
+  // table.addEventListener('click', res => res.target.style.backgroundColor = "#AA0000")
+
+  // var tableCellArray = document.getElementsByClassName('month-cells');
+  //   tableCellArray[0].addEventListener('click', function(){
+  //     tableCellArray[0].style.backgroundColor = "#AA0000";
+  //   });
 };
 
 

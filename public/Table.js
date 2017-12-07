@@ -11,7 +11,9 @@ Table.prototype.monthClicker = function(){
 
   function bindClick(i) {
     return function(){
-      this.style.backgroundColor = "#AA0000"
+      var statusSelector = document.getElementById('face-or-heel');
+      statusSelector.style.visibility = "visible"
+      }
     };
   }
 }

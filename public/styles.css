@@ -11,3 +11,19 @@ td {
   height: 20px;
   width: 20px;
 }
+
+#face-or-heel {
+  visibility: hidden;
+}
+
+#face {
+  height: 30px;
+  width: 30px;
+  background-color: green;
+}
+
+#heel {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+}
